@@ -12,22 +12,22 @@ CodeChef submission 18971226 (JAVA) plaintext list. Status: AC, problem DIRECTI,
     {
     	public static void main (String[] args) throws java.lang.Exception
     	{
-    		Scanner scan = new Scanner(System.in);
-    		int t = scan.nextInt();
+    		Scanner sc = new Scanner(System.in);
+    		int t = sc.nextInt();
     		for(int i=0;i<t;i++)
     		{
-    		    int n = scan.nextInt();
-    		    scan.nextLine();
+    		    int n = sc.nextInt();
+    		    sc.nextLine();
     		    
     		    
     		   ArrayList<String> a = new ArrayList<>();
-                for(int j=0; j<n ;j++) 
+                for(int j=0; j<=n-1 ;j++) 
                 {
-                    a.add(scan.nextLine());
+                    a.add(sc.nextLine());
                 }
                 
                 System.out.println("Begin"+a.get(n-1).substring(a.get(n-1).indexOf(" ")));
-                for(int j=n-1; j>0; j--) 
+                for(int j=n-1; j>=1; j--) 
                 {
                     if(a.get(j).startsWith("Left"))
                     {
